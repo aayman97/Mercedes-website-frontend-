@@ -1,38 +1,196 @@
+@translateX: -1560;
+
 .App {
   text-align: center;
+ background : black;
+ width : 100%;
+ height : 100vh;
+ overflow: hidden;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+ width : 3%;
+  height : 3%;
 }
+.NavBar{
+  display : flex;
+  flex-direction :row;
+  justify-content :space-between;
+  align-items: center;
+  padding: 10px 20px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navBox{
+  display :flex;
+  flex-direction : row;
+  width : 40%;
+  height: 5%;
+  justify-content: space-between;
+  align-items: center;
+}
+.navBox a,li,h6{
+ text-decoration: none;
+  list-style: none;
+  color: white;
+  list-style: none;
+  margin : 0px 20px;
+  font-family: 'PT Sans', sans-serif;
+}
+.linkContainer{
+  height: 20px;
+}
+.navBox h6{
+  font-size: 30px;
+  position: relative;
+  bottom : 20px
+}
+.wholeContainer{
+  top : 10%;
+  position: relative;
+  display: inline-flex;
+  transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.carsContainer{
   display: flex;
-  flex-direction: column;
+  position: relative;
+  width:1560px;
+  justify-content : center;
+ 
+
+}
+.cars{
+  width : 45%;
+ object-fit: contain;
+ position: relative;
+ bottom : 20%;
+}
+/* .mercedesWord{
+  position: absolute;
+  color: #e8e7e7;
+ font-family: 'Lora', serif;
+ font-size: 170px;
+ opacity: 0.5;
+ left : 14%;
+ bottom :32%;
+ letter-spacing: 50px
+} */
+.buildingClass{
+  color : white;
+  position: relative;
+  font-size: 17px;
+ font-family: 'PT Sans', sans-serif;
+  top : -18%;
+  letter-spacing:3px
+}
+.button {
+  background-color:#3e3e40 ;
+  border: none;
+  color: white;
+  padding: 12px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+  top : -18%;
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing:7px;
+  font-weight : 800;
+}
+.logos{
+  width : 65px;
+  height : 150px;
+  position: relative;
+  left : 20px;
+  bottom : 320px;
+  display : flex;
+  flex-direction : column;
+  align-items : center;
+}
+.logos img{
+  width : 20px;
+  height: 20px;
+  padding : 10px 0px
+}
+.logos2{
+  width : 65px;
+  height : 150px;
+  position: relative;
+  left : 94%;
+  bottom : 480px;
+  display : flex;
+  flex-direction : column;
+  align-items : center;
+  justify-content :center;
+}
+.dot{
+  width :15px;
+  height :15px;
+  border-radius: 20px;
+  background : #afafaf;
+  margin : 5px 0px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.1s linear;
+}
+.dotSelected{
+   width :15px;
+  height :15px;
+  border-radius: 20px;
+  background : white;
+  margin : 5px 0px;
+}
+.dotContainer{
+  display: flex;
+  width :20px;
+  height :20px;
+  border-radius: 20px;
+  margin : 5px 0px;
+  border: white 2px solid;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  transition: 0.1s linear
+}
+.dataContainer{
+  width : 90%;
+  height : 150px;
+  position: absolute;
+  bottom : 20px;
+  display: flex;
+  left : 9%;
+
+}
+.textContainer{
+  width : 22%;
+  height : 150px;
+  text-align: right;
+  display : flex;
+  align-items: flex-end;
+  padding: 0px 20px;
+   flex-direction: column;
+}
+.textContainer h4{
   color: white;
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing:1px;
+  font-size: 20px;
+    padding: 0px 20px;
+    position: relative;
 }
-
-.App-link {
-  color: #61dafb;
+.textContainer h6{
+   display:inline-block;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 9px;
+  letter-spacing:2px;
+  position: relative;
+  bottom : 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.h6text{
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+  padding : 10px 0px;
+  font-size: 9px;
+  letter-spacing:2px;
 }
